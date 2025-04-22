@@ -71,7 +71,15 @@ button {
 }
 
 .container {
-  max-width: calc(var(--container) + var(--padding-container) * 2);
+  /* max-width: calc(var(--container) + var(--padding-container) * 2); */
+  max-width: 100%;
   padding: 0 var(--padding-container);
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    --container: 640px;
+    --padding-container: 64px;
+  }
 }
